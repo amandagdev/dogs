@@ -1,0 +1,27 @@
+
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "extends": [
+        "plugin:prettier/recommended"
+      ],
+    "plugins": ["prettier"],
+    "rules": {
+        "no-console": 0, 
+        "quotes": ["error", "single"],
+        "import/extensions": ["error", "never"], 
+            "prettier/prettier": "error",
+            "react/jsx-filename-extension": [
+          "warn", { "extensions": [".jsx", ".js"] }
+        ],
+      }
+}
