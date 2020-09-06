@@ -3,9 +3,10 @@ import './styles.css'
 
  const Input = ({ label, type, name }) => {
   return (
-    <div>
-      <label htmlFor={name}>{label}</label>
-      <input type={type} name={name} id={name}/>
+    <div className="input__wrapper">
+      <label className="input__label" htmlFor={name}>{label}</label>
+      <input className="input" type={type} name={name} id={name}/>
+      <p className="input__error">Error</p>
     </div>
   )
 }
