@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.header__login {
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
