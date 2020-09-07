@@ -16,6 +16,7 @@ Tenha o node e npm baixados.
 
 No terminal clone o projeto:
 > git clone https://github.com/amandagdev/dogs.git
+
 Dentro da pasta do projeto:
 
 Instale as dependências:
