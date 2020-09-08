@@ -34,9 +34,9 @@
   },
   "explorer.sortOrder": "default",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.newWindowDimensions": "inherit",
-  "workbench.colorTheme": "Origamid Next",
   "html.format.wrapAttributes": "auto",
+  "workbench.colorTheme": "Origamid Next",
+  "workbench.iconTheme": "material-icon-theme",
   "html.format.wrapLineLength": 0,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -49,5 +49,5 @@
     "package.json": true,
     "package-lock.json": true,
     "public": true
-  }
+  },
 }

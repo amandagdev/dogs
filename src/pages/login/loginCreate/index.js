@@ -8,5 +8,4 @@ const LoginCreate = () => {
   );
 };
 
-
-export default LoginCreate
+export default LoginCreate;

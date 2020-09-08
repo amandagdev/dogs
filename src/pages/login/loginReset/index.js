@@ -8,5 +8,4 @@ const LoginReset = () => {
   );
 };
 
-
-export default LoginReset
+export default LoginReset;
