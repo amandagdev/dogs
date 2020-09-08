@@ -1,12 +1,15 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import LoginPassword from './Pages/Login/LoginPassword';
 import LoginReset from './Pages/Login/LoginReset';
 import LoginCreate from './Pages/Login/LoginCreate';
+import { useUser } from './Context';
 
 const AppRoutes = () => {
+  const { login } = useUser();
+
   return (
     <div>
       <Routes>

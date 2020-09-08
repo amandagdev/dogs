@@ -7,13 +7,13 @@ import { useUser } from '../../Context';
 
 const Login = () => {
   const username = useForm();
-  const password = useForm(); 
-  const { userLogin } = useUser()
+  const password = useForm();
+  const { userLogin, login, error, loading } = useUser();
 
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      userLogin(username.value, password.value)
+      userLogin(username.value, password.value);
     } catch (error) {
       console.log(error);
     }
@@ -24,7 +24,13 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <Input name="username" type="text" label="Usúario" {...username} />
         <Input name="password" type="password" label="Senha" {...password} />
-        <Button>Entrar</Button>
+        {loading ? (
+          <Button disabled>Carregando...</Button>
+        ) : (
+          <Button>Entrar</Button>
+        )}
+
+        {error && <p>{error}</p>}
       </form>
       <Link to="/login/criar">Criar</Link>
       <Outlet />
