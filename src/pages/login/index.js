@@ -1,40 +1,21 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
-import Input from '../../Components/Form/Input';
-import Button from '../../Components/Form/Button';
-import useForm from '../../Hooks/useForm';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import LoginPassword from './LoginPassword';
+import LoginReset from './LoginReset';
+import LoginCreate from './LoginCreate';
+import LoginForm from './LoginForm';
 import { useUser } from '../../Context';
 
 const Login = () => {
-  const username = useForm();
-  const password = useForm();
-  const { userLogin, login, error, loading } = useUser();
-
-  async function handleSubmit(e) {
-    e.preventDefault();
-    try {
-      userLogin(username.value, password.value);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   return (
-    <section>
-      <form onSubmit={handleSubmit}>
-        <Input name="username" type="text" label="Usúario" {...username} />
-        <Input name="password" type="password" label="Senha" {...password} />
-        {loading ? (
-          <Button disabled>Carregando...</Button>
-        ) : (
-          <Button>Entrar</Button>
-        )}
-
-        {error && <p>{error}</p>}
-      </form>
-      <Link to="/login/criar">Criar</Link>
-      <Outlet />
-    </section>
+    <>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="criar" element={<LoginCreate />} />
+        <Route path="perdeu" element={<LoginPassword />} />
+        <Route path="resetar" element={<LoginReset />} />
+      </Routes>
+    </>
   );
 };
 

@@ -7,7 +7,6 @@ import { useUser } from '../../Context';
 const Header = () => {
   const { data } = useUser();
 
-  console.log(data);
   return (
     <header className="header">
       <nav className="header__nav container">
