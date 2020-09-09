@@ -4,6 +4,7 @@ import Input from '../../../Components/Form/Input';
 import Button from '../../../Components/Form/Button';
 import useForm from '../../../Hooks/useForm';
 import { useUser } from '../../../Context';
+import Error from '../../../Components/Error';
 
 const LoginForm = () => {
   const username = useForm();
@@ -22,7 +23,6 @@ const LoginForm = () => {
   return (
     <section className="anime-left">
       <h1 className="title">Login</h1>
-      <h1>ola</h1>
       <form onSubmit={handleSubmit}>
         <Input name="username" type="text" label="Usúario" {...username} />
         <Input name="password" type="password" label="Senha" {...password} />
@@ -32,7 +32,7 @@ const LoginForm = () => {
           <Button>Entrar</Button>
         )}
 
-        {error && <p>{error}</p>}
+        <Error error={error} />
       </form>
       <Link to="/login/criar">Criar</Link>
     </section>
