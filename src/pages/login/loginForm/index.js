@@ -22,6 +22,7 @@ const LoginForm = () => {
   return (
     <section className="anime-left">
       <h1 className="title">Login</h1>
+      <h1>ola</h1>
       <form onSubmit={handleSubmit}>
         <Input name="username" type="text" label="Usúario" {...username} />
         <Input name="password" type="password" label="Senha" {...password} />
