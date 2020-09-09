@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './styles.css';
 import Input from '../../../Components/Form/Input';
 import Button from '../../../Components/Form/Button';
 import useForm from '../../../Hooks/useForm';
@@ -31,10 +32,16 @@ const LoginForm = () => {
         ) : (
           <Button>Entrar</Button>
         )}
-
         <Error error={error} />
       </form>
-      <Link to="/login/criar">Criar</Link>
+      <Link className="login__forgot" to="/login/perdeu">
+        Perdeu a senha?
+      </Link>
+      <div className="form__register">
+        <h2 className="form__subtitle">Cadastre-se</h2>
+        <p>Ainda não possui conta? Cadastre-se no site.</p>
+        <Link className="button" to="/login/criar">Cadastro</Link>
+      </div>
     </section>
   );
 };

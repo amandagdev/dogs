@@ -1,0 +1,39 @@
+form {
+  margin-bottom: 2rem;
+}
+
+.login__forgot {
+  display: inline-block;
+  color: #666;
+  padding: 0.5rem;
+}
+
+.login__forgot::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  display: block;
+}
+
+.form__register {
+  margin-top: 4rem;
+}
+
+.form__register p {
+  margin: 2rem 0;
+}
+
+.form__subtitle {
+  font-family: var(type-second);
+  font-size: 2rem;
+}
+
+.form__subtitle::after {
+  content: '';
+  display: block;
+  background: #ddd;
+  height: 0.5rem;
+  width: 3rem;
+  border-radius: 0.2rem;
+}
