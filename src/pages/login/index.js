@@ -7,6 +7,9 @@ import LoginForm from './LoginForm';
 import { useUser } from '../../Context';
 
 const Login = () => {
+  const { login } = useUser();
+
+  if (login === true) return <Navigate to="/conta" />;
   return (
     <>
       <Routes>
