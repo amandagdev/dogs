@@ -4,6 +4,10 @@
 
 <p align="justify">Uma rede social para fotos de cachorros onde posso fazer uma conta, logar, postar fotos, postar comentários, acompanhar as visualizações das minhas fotos e também mostrar em um gráfico. </p>
 
+## Objetivo
+
+<p align="justify">Aperfeiçoar meus conhecimentos em react e javascript.</p>
+
 ## Libs utilizadas 
 - [X] React 
 - [X] React Router Dom
