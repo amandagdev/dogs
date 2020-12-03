@@ -1,4 +1,4 @@
 .error {
-  color: #fb1;
+  color: var(--primary);
   margin: 1rem 0;
 }

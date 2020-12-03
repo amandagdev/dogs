@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
-import Input from '../../../Components/Form/Input';
-import Button from '../../../Components/Form/Button';
-import useForm from '../../../Hooks/useForm';
+import Input from '../../../components/form/input';
+import Button from '../../../components/form/button';
+import useForm from '../../../hooks/useForm';
 import { useUser } from '../../../Context';
-import Error from '../../../Components/Error';
+import Error from '../../../components/Error';
 
 const LoginForm = () => {
   const username = useForm();

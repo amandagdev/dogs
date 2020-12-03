@@ -1,0 +1,10 @@
+html, body, #root {
+  --white: #f1f1f1;
+  --whiteLight: #eee;
+  --black: #000000;
+  --primary: #fb1;
+  --second: #fea;
+  --brown: #764701;
+  --blackLight: #333;
+  --greyDark: #666;
+}

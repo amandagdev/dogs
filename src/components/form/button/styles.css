@@ -4,8 +4,8 @@
   border-radius: 0.4rem;
   padding: 0.8rem 1.8rem;
   min-width: 8rem;
-  background-color: #fb1;
-  color: #764701;
+  background-color: var(--primary);
+  color:var(--brown);
   font-weight: bold;
   box-sizing: border-box;
   transition: 0.1s;
@@ -14,7 +14,7 @@
 .button:hover,
 .button:focus {
   outline: none;
-  box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+  box-shadow: 0 0 0 3px var(--second), 0 0 0 4px var(--primary);
 }
 
 .button:disabled {

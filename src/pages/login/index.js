@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import LoginPassword from './LoginPassword';
-import LoginReset from './LoginReset';
-import LoginCreate from './LoginCreate';
-import LoginForm from './LoginForm';
+import LoginPassword from './loginPassword';
+import LoginReset from './loginReset';
+import LoginCreate from './loginCreate';
+import LoginForm from './loginForm';
 import { useUser } from '../../Context';
 
 const Login = () => {

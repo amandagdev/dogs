@@ -3,21 +3,21 @@
 }
 
 .input {
-  border: 1px solid #eee;
+  border: 1px solid var(--whiteLight);
   display: block;
   width: 100%;
   font-size: 1rem;
   padding: 0.8rem;
   border-radius: 0.4rem;
-  background-color: #eee;
+  background-color: var(--whiteLight);
   transition: 0.2s
 }
 
 .input:hover, .input:focus {
   outline: none;
-  border-color: #fb1;
-  background-color: #fff;
-  box-shadow: 0 0 0 2px #fea;
+  border-color: var(--primary);
+  background-color: var(--whiteLight);
+  box-shadow: 0 0 0 2px var(--second);
 }
 
 .input__label {
@@ -28,7 +28,7 @@
 }
 
 .input__error {
-  color: #fb1;
+  color: var(--primary);
   font-size: 0.850rem;
   margin-top: 0.25rem;
 }

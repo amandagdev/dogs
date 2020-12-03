@@ -1,8 +1,10 @@
 import React from 'react';
-import './index.css';
+import './styles/main.css';
+import './styles/colours.css';
+import './styles/breakpoints.css';
 import { BrowserRouter } from 'react-router-dom';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './components/header';
+import Footer from './components/footer';
 import AppRoutes from './routes';
 import { UserStorage } from './Context';
 

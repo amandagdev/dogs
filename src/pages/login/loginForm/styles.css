@@ -4,7 +4,7 @@ form {
 
 .login__forgot {
   display: inline-block;
-  color: #666;
+  color: var(--greyDark);
   padding: 0.5rem;
 }
 
@@ -25,7 +25,7 @@ form {
 }
 
 .form__subtitle {
-  font-family: var(type-second);
+  font-family: var(--font-second);
   font-size: 2rem;
 }
 

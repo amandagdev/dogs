@@ -15,7 +15,7 @@
 }
 
 .header__login {
-  color: #333;
+  color: var(--blackLight);
   display: flex;
   align-items: center;
 }
