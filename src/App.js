@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles/main.css';
 import './styles/colours.css';
-import './styles/breakpoints.css';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
