@@ -1,0 +1,5 @@
+html, body, #root {
+  --small: 540px;
+  --medium: 768px;
+  --large: 992px;
+}
