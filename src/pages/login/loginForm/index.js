@@ -5,7 +5,7 @@ import Input from '../../../components/form/input';
 import Button from '../../../components/form/button';
 import useForm from '../../../hooks/useForm';
 import { useUser } from '../../../Context';
-import Error from '../../../components/Error';
+import Error from '../../../helper/Error';
 
 const LoginForm = () => {
   const username = useForm();
