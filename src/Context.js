@@ -74,7 +74,7 @@ const UserStorage = ({ children }) => {
 
   return (
     <Context.Provider
-      value={{ userLogin, data, userLogout, error, login, loading }}
+      value={{ userLogin, userLogout,data, error, login, loading }}
     >
       {children}
     </Context.Provider>
@@ -89,4 +89,4 @@ const useUser = () => {
   return context;
 };
 
-export { UserStorage, useUser, Context };
+export { UserStorage, useUser };
