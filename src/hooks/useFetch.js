@@ -21,7 +21,7 @@ function useFetch() {
     } finally {
       setData(json);
       setLoading(false);
-      return { data, json };
+      return { response, json };
     }
   }, []);
 

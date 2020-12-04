@@ -5,7 +5,7 @@ import useFetch from '../../../hooks/useFetch';
 import { USER_POST } from '../../../services/api';
 import useForm from '../../../hooks/useForm';
 import { useUser } from '../../../Context';
-import Error from '../../../helper/Error'
+import Error from '../../../helper/Error';
 
 const LoginCreate = () => {
   const { request, error, loading } = useFetch();
@@ -16,16 +16,13 @@ const LoginCreate = () => {
 
   const handleCreate = async (e) => {
     e.preventDefault();
-
     const { url, options } = USER_POST({
       username: username.value,
       email: email.value,
       password: password.value,
     });
-
-    console.log(options)
-
-    const response = await request(url, options);
+    const { response } = await request(url, options);
+    console.log(response);
     if (response.ok) userLogin(username.value, password.value);
   };
 
