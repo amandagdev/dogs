@@ -11,6 +11,8 @@
 ## Libs utilizadas 
 - [X] React 
 - [X] React Router Dom
+- [X] React Testing Library
+- [X] Jest
 
 > Status do Projeto: Em desenvolvimento :warning:
 
@@ -19,14 +21,17 @@
 Tenha o node e npm baixados.
 
 No terminal clone o projeto:
+
 > git clone https://github.com/amandagdev/dogs.git
 
 Dentro da pasta do projeto:
 
 Instale as dependências:
+
 > npm install ou yarn install
 
 Execute a aplicação:
+
 > npm start ou yarn start
 
 Caso a aplicação rode normalmente, estará disponível em localhost:3000
