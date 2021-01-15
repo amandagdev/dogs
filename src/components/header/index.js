@@ -1,11 +1,11 @@
-import React from 'react';
-import './styles.css';
-import { Link } from 'react-router-dom';
-import { ReactComponent as Dogs } from '../../assets/images/dogs.svg';
-import { useUser } from '../../Context';
+import React from 'react'
+import './styles.css'
+import { Link } from 'react-router-dom'
+import { ReactComponent as Dogs } from '../../assets/images/dogs.svg'
+import { useUser } from '../../Context'
 
 const Header = () => {
-  const { data } = useUser();
+  const { data } = useUser()
 
   return (
     <header className="header">
@@ -24,7 +24,7 @@ const Header = () => {
         )}
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

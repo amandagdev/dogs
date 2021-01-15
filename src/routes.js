@@ -1,12 +1,11 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/home';
-import Login from './pages/login';
-import LoginCreate from './pages/login/loginCreate';
-import LoginForm from './pages/login/loginForm';
-import LoginPassword from './pages/login/loginPassword';
-import LoginReset from './pages/login/loginReset';
-
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/home'
+import Login from './pages/login'
+import LoginCreate from './pages/login/loginCreate'
+import LoginForm from './pages/login/loginForm'
+import LoginPassword from './pages/login/loginPassword'
+import LoginReset from './pages/login/loginReset'
 
 const AppRoutes = () => {
   return (
@@ -21,7 +20,7 @@ const AppRoutes = () => {
         </Route>
       </Routes>
     </div>
-  );
-};
+  )
+}
 
-export default AppRoutes;
+export default AppRoutes

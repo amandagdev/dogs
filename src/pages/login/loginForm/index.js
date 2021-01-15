@@ -1,23 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css';
-import Input from '../../../components/form/input';
-import Button from '../../../components/form/button';
-import useForm from '../../../hooks/useForm';
-import { useUser } from '../../../Context';
-import Error from '../../../helper/Error';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './styles.css'
+import Input from '../../../components/form/input'
+import Button from '../../../components/form/button'
+import useForm from '../../../hooks/useForm'
+import { useUser } from '../../../Context'
+import Error from '../../../helper/Error'
 
 const LoginForm = () => {
-  const username = useForm();
-  const password = useForm();
-  const { userLogin, login, error, loading } = useUser();
+  const username = useForm()
+  const password = useForm()
+  const { userLogin, login, error, loading } = useUser()
 
   async function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
     try {
-      userLogin(username.value, password.value);
+      userLogin(username.value, password.value)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   }
 
@@ -40,10 +40,12 @@ const LoginForm = () => {
       <div className="form__register">
         <h2 className="form__subtitle">Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site.</p>
-        <Link className="button" to="/login/criar">Cadastro</Link>
+        <Link className="button" to="/login/criar">
+          Cadastro
+        </Link>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default LoginForm;
+export default LoginForm

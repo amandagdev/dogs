@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css';
+import React from 'react'
+import './styles.css'
 
 const Input = ({ label, type, name, value, onChange }) => {
   return (
@@ -17,7 +17,7 @@ const Input = ({ label, type, name, value, onChange }) => {
       />
       <p className="input__error">Error</p>
     </div>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input

@@ -1,5 +1,5 @@
 {
-  "singleQuote": true, 
-  "trainlingComma": "all",
-  "semi": true 
+  "singleQuote": true,
+  "trainlingComma": "never",
+  "semi": false
 }

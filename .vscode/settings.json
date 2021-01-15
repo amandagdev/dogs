@@ -36,18 +36,15 @@
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "html.format.wrapAttributes": "auto",
   "workbench.colorTheme": "Origamid Next",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "html.format.wrapLineLength": 0,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "git.enabled": false,
   "files.exclude": {
-    "node_modules": true,
-    ".vscode": true,
     ".gitignore": true,
-    "package.json": true,
-    "package-lock.json": true,
-    "public": true
+    ".vscode": true,
+    "package-lock.json": true
   },
 }

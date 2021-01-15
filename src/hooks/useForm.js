@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const useForm = () => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState('')
 
   function onChange({ target }) {
-    setValue(target.value);
+    setValue(target.value)
   }
 
-  return { value, setValue, onChange };
-};
+  return { value, setValue, onChange }
+}
 
-export default useForm;
+export default useForm

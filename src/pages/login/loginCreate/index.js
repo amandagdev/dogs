@@ -1,30 +1,30 @@
-import React from 'react';
-import Input from '../../../components/form/input';
-import Button from '../../../components/form/button';
-import useFetch from '../../../hooks/useFetch';
-import { USER_POST } from '../../../services/api';
-import useForm from '../../../hooks/useForm';
-import { useUser } from '../../../Context';
-import Error from '../../../helper/Error';
+import React from 'react'
+import Input from '../../../components/form/input'
+import Button from '../../../components/form/button'
+import useFetch from '../../../hooks/useFetch'
+import { USER_POST } from '../../../services/api'
+import useForm from '../../../hooks/useForm'
+import { useUser } from '../../../Context'
+import Error from '../../../helper/Error'
 
 const LoginCreate = () => {
-  const { request, error, loading } = useFetch();
-  const username = useForm();
-  const email = useForm();
-  const password = useForm();
-  const { userLogin } = useUser();
+  const { request, error, loading } = useFetch()
+  const username = useForm()
+  const email = useForm()
+  const password = useForm()
+  const { userLogin } = useUser()
 
   const handleCreate = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     const { url, options } = USER_POST({
       username: username.value,
       email: email.value,
       password: password.value,
-    });
-    const { response } = await request(url, options);
-    console.log(response);
-    if (response.ok) userLogin(username.value, password.value);
-  };
+    })
+    const { response } = await request(url, options)
+    console.log(response)
+    if (response.ok) userLogin(username.value, password.value)
+  }
 
   return (
     <section className="anime-left">
@@ -37,7 +37,7 @@ const LoginCreate = () => {
         <Error error={error} />
       </form>
     </section>
-  );
-};
+  )
+}
 
-export default LoginCreate;
+export default LoginCreate

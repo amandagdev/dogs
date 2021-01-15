@@ -1,7 +1,9 @@
 {
   "env": {
     "browser": true,
-    "es2020": true
+    "es2020": true,
+    "jest": true,
+    "node": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -10,13 +12,19 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "extends": ["plugin:prettier/recommended"],
-  "plugins": ["prettier"],
+  "extends": ["plugin:prettier/recommended", "plugin:testing-library/react", "plugin:jest-dom/recommended"],
+  "plugins": ["prettier", "testing-library", "jest-dom"],
   "rules": {
     "no-console": 0,
     "quotes": ["error", "single"],
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": ["warn", { "extensions": [".jsx", ".js"] }],
-    "import/extensions": [".js", ".jsx"]
+    "import/extensions": 0,
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "warn",
+    "jest-dom/prefer-checked": "error",
+    "jest-dom/prefer-enabled-disabled": "error",
+    "jest-dom/prefer-required": "error",
+    "jest-dom/prefer-to-have-attribute": "error"
   }
 }

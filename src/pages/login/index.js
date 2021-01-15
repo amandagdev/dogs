@@ -1,21 +1,21 @@
-import React from 'react';
+import React from 'react'
 import './styles.css'
-import { Outlet, Navigate } from 'react-router-dom';
-import { useUser } from '../../Context';
+import { Outlet, Navigate } from 'react-router-dom'
+import { useUser } from '../../Context'
 
 const Login = () => {
-  const { login } = useUser();
+  const { login } = useUser()
 
-  if (login === true) return <Navigate to="/conta" />;
+  if (login === true) return <Navigate to="/conta" />
   return (
     <>
       <section className="login">
         <div className="login__routes">
-         <Outlet/>
+          <Outlet />
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login
