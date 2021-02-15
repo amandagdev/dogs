@@ -1,4 +1,4 @@
-export const API_URL = 'https://dogsapi.origamid.dev/json';
+export const API_URL = 'https://dogsapi.origamid.dev/json'
 
 export function TOKEN_POST(body) {
   return {
@@ -10,7 +10,7 @@ export function TOKEN_POST(body) {
       },
       body: JSON.stringify(body),
     },
-  };
+  }
 }
 
 export function TOKEN_VALIDATE_POST(token) {
@@ -22,7 +22,7 @@ export function TOKEN_VALIDATE_POST(token) {
         Authorization: 'Bearer ' + token,
       },
     },
-  };
+  }
 }
 
 export function USER_GET(token) {
@@ -34,7 +34,7 @@ export function USER_GET(token) {
         Authorization: 'Bearer ' + token,
       },
     },
-  };
+  }
 }
 
 export function USER_POST(body) {
@@ -47,5 +47,5 @@ export function USER_POST(body) {
       },
       body: JSON.stringify(body),
     },
-  };
+  }
 }

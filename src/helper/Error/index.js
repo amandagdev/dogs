@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
 
-const Error = ({error}) => {
-  if(!error) return null
+const Error = ({ error }) => {
+  if (!error) return null
   return <p className="error">{error}</p>
 }
 
