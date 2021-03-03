@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Header/> should render the header 1'] = `
+<header
+  class="header"
+>
+  <nav
+    class="header__nav container"
+  >
+    <a
+      class="header__logo"
+      href="/"
+    >
+      <reactcomponent />
+    </a>
+    <a
+      class="header__login"
+      href="/login"
+    >
+      Login | Criar
+    </a>
+  </nav>
+</header>
+`

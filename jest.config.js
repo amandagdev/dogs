@@ -5,6 +5,6 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.js'],
   setupFilesAfterEnv: ['<rootDir>/jest/setup.js'],
   moduleNameMapper: {
-    '\\.(css|less|scss)$': 'identity-obj-proxy',
+    '\\.(svg|css|less|scss|png|jpg)$': 'identity-obj-proxy',
   },
 }
