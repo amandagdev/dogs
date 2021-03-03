@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports['<Input> should render the input 1'] = `
+<div
+  class="input__wrapper"
+>
+  <label
+    class="input__label"
+  />
+  <input
+    class="input"
+    value=""
+  />
+  <p
+    class="input__error"
+  >
+    Error
+  </p>
+</div>
+`
