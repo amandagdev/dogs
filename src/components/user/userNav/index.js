@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { useUser } from '../../../Context'
@@ -9,11 +9,12 @@ import Feed from '../../../icons/feed.js'
 import Photo from '../../../icons/photo.js'
 import Statistic from '../../../icons/statistic.js'
 import GetOut from '../../../icons/getOut.js'
+import { useMedia } from '../../../hooks/useMedia'
 
 const Nav = () => {
   const { userLogout } = useUser()
 
-  const [mobile, setMobile] = useState(false)
+  const mobile = useMedia('(max-width: 40rem)')
 
   return (
     <nav className="nav">
