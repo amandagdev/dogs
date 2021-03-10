@@ -1,6 +1,7 @@
 html, body, #root {
-  --white: #f1f1f1;
-  --whiteLight: #eee;
+  --white: #fff;
+  --whiteLight: #f1f1f1;
+  --greyLight: #eee;
   --black: #000000;
   --primary: #fb1;
   --second: #fea;

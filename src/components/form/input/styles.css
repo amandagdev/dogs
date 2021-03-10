@@ -3,20 +3,20 @@
 }
 
 .input {
-  border: 1px solid var(--whiteLight);
+  border: 1px solid var(--greyLight);
   display: block;
   width: 100%;
   font-size: 1rem;
   padding: 0.8rem;
   border-radius: 0.4rem;
-  background-color: var(--whiteLight);
+  background-color: var(--greyLight);
   transition: 0.2s
 }
 
 .input:hover, .input:focus {
   outline: none;
   border-color: var(--primary);
-  background-color: var(--whiteLight);
+  background-color: var(--greyLight);
   box-shadow: 0 0 0 2px var(--second);
 }
 
